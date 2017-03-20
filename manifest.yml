@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: rlt-node-red01
+  host: rlt-node-red01
+  disk_quota: 1024M
+  services:
+  - Conversation-service
+  - rlt-node-red01-cloudantNoSQLDB
+  - Language Translator-zf
